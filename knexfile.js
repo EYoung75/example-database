@@ -3,12 +3,12 @@
 module.exports = {
 
   development: {
-    client: 'sq',
-    connection: "postgresql://localhost/example-database"
+    client: 'pg',
+    connection: "postgresql://localhost/examples"
   },
 
   production: {
-    client: 'sq',
+    client: 'pg',
     connection: "connection: process.env.DATABASE_URL"
   }
 
