@@ -1,7 +1,7 @@
-const database = require("./migrations/database-connection")
+const database = require("./database-connection")
 
 module.exports = {
     listAll(){
-        return database('examples')
-    }
+        return database('things')
+  }
 }

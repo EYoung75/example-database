@@ -1,10 +1,10 @@
 
 exports.seed = function(knex, Promise) {
   // Deletes ALL existing entries
-  return knex('examples').del()
+  return knex('things').del()
     .then(function () {
       // Inserts seed entries
-      return knex('examples').insert([
+      return knex('things').insert([
         {
           thing: "iphone",
           where: "my pocket",
